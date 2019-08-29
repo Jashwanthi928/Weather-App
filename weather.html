@@ -1,0 +1,34 @@
+<!-- WEATHER APP
+This the weather app which shows weather of different cities-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body onload=getTwelveHrs()>
+    <div onload="cToF(celsius) ">
+        <h1 id="heading"> WELCOME TO WEATHER APP</h1>
+    </div>
+    <form name="cityName" action="weatherApp.html" onsubmit="return validateForm()" method="post">
+    <div onload="fToC(fahrenheit)"> 
+        <input name=input list="City" placeholder="City name">
+
+        <datalist id="City">
+          <option value="Bangalore,karnataka">
+          <option value="Hyderabad,Andhra pradesh">
+          <option value="Chennai,Tamil Nadu">
+          <option value="Mumbai,Maharashtra">
+          <option value="New Delhi,Delhi">
+        </datalist>
+        <button input type="submit" id=sub>submit</button>
+    </div>
+     </form>
+    <div id = daytime></div>
+    <div id = City></div>
+    <div id = cel></div>
+    <div id = fah></div>
+    
+    
+<script type="text/javascript" src="weatherApp.js"></script>
+<link rel="stylesheet" type="text/css" href="weatherApp.css">
+</html>
