@@ -6,29 +6,32 @@ This the weather app which shows weather of different cities-->
     <title>Weather App</title>
 </head>
 <body onload=getTwelveHrs()>
-    <div onload="cToF(celsius) ">
+    <div onload="cToF(celsius)"> 
         <h1 id="heading"> WELCOME TO WEATHER APP</h1>
     </div>
-    <form name="cityName" action="weatherApp.html" onsubmit="return validateForm()" method="post">
+    <div id = city></div>
+    <div id = daytime></div>
+    <!-- </form name="cityName" onclick="return validateForm()"> -->
     <div onload="fToC(fahrenheit)"> 
-        <input name=input list="City" placeholder="City name">
+         <input id='input' list="City" placeholder="City name"onchange="return tempCall(),validateForm() "> 
 
         <datalist id="City">
-          <option value="Bangalore,karnataka">
-          <option value="Hyderabad,Andhra pradesh">
-          <option value="Chennai,Tamil Nadu">
-          <option value="Mumbai,Maharashtra">
-          <option value="New Delhi,Delhi">
+                <!-- <option value=""></option> -->
+          <option value="Bangalore,karnataka"></option>
+          <option value="Hyderabad,Andhra pradesh"></option>
+          <option value="Chennai,Tamil Nadu"></option>
+          <option value="Mumbai,Maharashtra"></option>
+          <option value="New Delhi,Delhi"></option>
         </datalist>
-        <button input type="submit" id=sub>submit</button>
+        <!-- <button input type="submit" id=sub>submit</button> -->
     </div>
      </form>
-    <div id = daytime></div>
-    <div id = City></div>
+    
+    
     <div id = cel></div>
     <div id = fah></div>
     
     
 <script type="text/javascript" src="weatherApp.js"></script>
-<link rel="stylesheet" type="text/css" href="weatherApp.css">
+
 </html>
