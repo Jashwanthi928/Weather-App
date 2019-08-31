@@ -2,13 +2,13 @@
 
 
 const cityList=[
-  {city:"Ahmedabad,Gujarat",Cel:34,Fah:93.2,climate:"Sunny🌞"},
-  {city:"Bangalore,karnataka",Cel:27,Fah:80.6,climate:"Cloudy☁️☁️"},
-  {city:"Chennai,Tamil Nadu",Cel:36,Fah:96.8,climate:"Sunny🌞"},
-  {city:"Hosur,Tamil Nadu",Cel:28,Fah:82.4,climate:"Partly cloudy☁️"},
-  {city:"Hyderabad,Andhra pradesh",Cel:29,Fah:84.2,climate:"Rain🌧️🌧️"},
-  {city:"Mumbai,Maharashtra",Cel:30,Fah:86,climate:"Cloudy☁️☁️"},
-  {city:"New Delhi,Delhi",Cel:37,Fah:98.6,climate:"Sunny🌞"}
+  {city:"Ahmedabad,Gujarat",Cel:34,Fah:93.2,climate:"Sunny &#x2600;"},
+  {city:"Bangalore,karnataka",Cel:27,Fah:80.6,climate:"Cloudy &#x2601; &#x2601;"},
+  {city:"Chennai,Tamil Nadu",Cel:36,Fah:96.8,climate:"Sunny &#x2600;"},
+  {city:"Hosur,Tamil Nadu",Cel:28,Fah:82.4,climate:"Partly cloudy &#x2601;"},
+  {city:"Hyderabad,Andhra pradesh",Cel:29,Fah:84.2,climate:" Heavy Rain &#x2602;&#x2602;"},
+  {city:"Mumbai,Maharashtra",Cel:30,Fah:86,climate:"Cloudy &#x2601;&#x2601;"},
+  {city:"New Delhi,Delhi",Cel:37,Fah:98.6,climate:"Sunny &#x2600"}
   ]
 
 //Code to display day and time
@@ -54,4 +54,9 @@ function tempCall(){
 
       
     }
+    if(celcius==cel){
+       document.getElementById("cel").innerHTML = celcius
+    }
+    else
+    document.getElementById("cel").innerHTML = celcius;
      
