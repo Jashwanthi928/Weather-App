@@ -2,13 +2,13 @@
 
 
 const cityList=[
-  {city:"Ahmedabad,Gujarat",Cel:34,Fah:93.2,climate:"Sunny &#x2600;"},
-  {city:"Bangalore,karnataka",Cel:27,Fah:80.6,climate:"Cloudy &#x2601; &#x2601;"},
-  {city:"Chennai,Tamil Nadu",Cel:36,Fah:96.8,climate:"Sunny &#x2600;"},
-  {city:"Hosur,Tamil Nadu",Cel:28,Fah:82.4,climate:"Partly cloudy &#x2601;"},
-  {city:"Hyderabad,Andhra pradesh",Cel:29,Fah:84.2,climate:" Heavy Rain &#x2602;&#x2602;"},
-  {city:"Mumbai,Maharashtra",Cel:30,Fah:86,climate:"Cloudy &#x2601;&#x2601;"},
-  {city:"New Delhi,Delhi",Cel:37,Fah:98.6,climate:"Sunny &#x2600"}
+  {city:"Ahmedabad,Gujarat",Cel:34,climate:"Sunny &#x2600;"},
+  {city:"Bangalore,karnataka",Cel:27,climate:"Cloudy &#x2601; &#x2601;"},
+  {city:"Chennai,Tamil Nadu",Cel:36,climate:"Sunny &#x2600;"},
+  {city:"Hosur,Tamil Nadu",Cel:28,climate:"Partly cloudy &#x2601;"},
+  {city:"Hyderabad,Andhra pradesh",Cel:29,climate:" Heavy Rain &#x2602;&#x2602;"},
+  {city:"Mumbai,Maharashtra",Cel:30,climate:"Cloudy &#x2601;&#x2601;"},
+  {city:"New Delhi,Delhi",Cel:32,climate:"Sunny &#x2600"}
   ]
 
 //Code to display day and time
@@ -39,24 +39,29 @@ function displayCity() {
 function tempCall(){
    var x = document.getElementById("input").value;
    var location= cityList.filter(function(v) {if(v.city===x)return v });
-   var cel=location[0].Cel;
-   var fah=location[0].Fah;
+   
    var cli=location[0].climate;
-   var cToFahr = (cel * (9 / 5))+ 32;
-   var fahrenheit =  cToFahr +'\xB0F';
-   var fToCel = Math.round(10*(fah - 32) * (5 / 9))/10;
-   var celcius =  fToCel+'\xB0C';
-
-      return document.getElementById("cel").innerHTML = celcius,
-      document.getElementById("fah").innerHTML = fahrenheit,
-      document.getElementById("climate").innerHTML = cli;
+   var cel=location[0].Cel;
+   
+      return document.getElementById("climate").innerHTML = cli,document.getElementById("temperature").innerHTML = cel;
       
 
       
     }
-    if(celcius==cel){
-       document.getElementById("cel").innerHTML = celcius
+    function tempClick(v){
+    var x = document.getElementById("input").value;
+    var location= cityList.filter(function(k) {if(k.city===x)return k });
+    var cel=location[0].Cel;
+    var fahrenheit= Math.round(10*(cel * (9 / 5))+ 32)/10;
+  
+     if(v==="C"){
+    return document.getElementById("temperature").innerHTML = cel;
+
     }
-    else
-    document.getElementById("cel").innerHTML = celcius;
+    else if(v==="F")
+    {
+      return document.getElementById("temperature").innerHTML = fahrenheit;
+    }
+    
      
+  }
