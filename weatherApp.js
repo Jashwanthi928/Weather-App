@@ -1,14 +1,14 @@
-//This the weather app which shows weather of different cities
+//This the weather app which shows Sunny &#x2600;weather of different cities
 
 
 const cityList=[
-  {city:"Ahmedabad,Gujarat",Cel:34,climate:"Sunny &#x2600;"},
-  {city:"Bangalore,karnataka",Cel:27,climate:"Cloudy &#x2601; &#x2601;"},
-  {city:"Chennai,Tamil Nadu",Cel:36,climate:"Sunny &#x2600;"},
-  {city:"Hosur,Tamil Nadu",Cel:28,climate:"Partly cloudy &#x2601;"},
-  {city:"Hyderabad,Andhra pradesh",Cel:29,climate:" Heavy Rain &#x2602;&#x2602;"},
-  {city:"Mumbai,Maharashtra",Cel:30,climate:"Cloudy &#x2601;&#x2601;"},
-  {city:"New Delhi,Delhi",Cel:32,climate:"Sunny &#x2600"}
+  {city:"Ahmedabad, Gujarat",Cel:34,climate:"Sunny &#x2600;"},
+  {city:"Bangalore, Karnataka",Cel:27,climate:"Cloudy &#x2601; &#x2601;"},
+  {city:"Chennai, Tamil Nadu",Cel:36,climate:"Sunny &#x2600;"},
+  {city:"Hosur, Tamil Nadu",Cel:28,climate:"Partly cloudy &#x2601;"},
+  {city:"Hyderabad, Andhra Pradesh",Cel:29,climate:" Heavy Rain &#x2602;&#x2602;"},
+  {city:"Mumbai, Maharashtra",Cel:30,climate:"Cloudy &#x2601;&#x2601;"},
+  {city:"New Delhi, Delhi",Cel:32,climate:"Sunny &#x2600"}
   ]
 
 //Code to display day and time
@@ -16,7 +16,7 @@ function getTwelveHrs() {
   var today = new Date();
   var day = today.getDay();
   var hourlist=[12,01,02,03,04,05,06,07,08,09,10,11,12,01,02,03,04,05,06,07,08,09,10,11];
-  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var hour = today.getHours();
   var minute = today.getMinutes();
   var append = (hour >= 12)? " pm ":" am ";
@@ -26,7 +26,7 @@ function getTwelveHrs() {
       }
     else{minute=minute}
   var time= hourlist[hour]  +':'+ minute + append
-  var day = daylist[day] + " "
+  var day = daylist[day]
   document.getElementById('daytime').innerHTML =day+","+' '+time;
 }
     
@@ -38,6 +38,7 @@ function displayCity() {
     
 function tempCall(){
    var x = document.getElementById("input").value;
+   console.log(x);
    var location= cityList.filter(function(v) {if(v.city===x)return v });
    
    var cli=location[0].climate;

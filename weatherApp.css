@@ -2,12 +2,13 @@
    position: relative;
    margin: auto;
    font-size: 1.5em;
+   color:white;
    width: 50%;
    float: left;
    height: 100vh;
-   background-color: #0080ff;
+   background-color: #87ceed;
    z-index: 1010101010;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: condensed sans;
 }
 #rightSide {
    position: relative;
@@ -46,10 +47,19 @@
     top: 50%;
 }
 #cel{
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1em;
+    /* font-weight: bold; */
 }
 #fah{
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1em;
+    /* font-weight: bold; */
+}
+#temperature{
+    font-size:2em;
+    font-weight:bold;
+}
+.logo{
+   max-height:  13em;
+   max-width: 13em;
+   margin-top: -5em;
 }
