@@ -15,7 +15,8 @@
    width: 50%;
    float: right;
    height: 98vh;
-   background-color: #eee;
+   background-color: #eee
+   ;
    z-index: 1010101010;
    font-family: Arial, Helvetica, sans-serif;
 }
