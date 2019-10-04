@@ -1,5 +1,5 @@
 # Weather-App
-This is a Weatherapp where you can check weather for different loctions.
+This is a Weatherapp where you can check weather for different locations.
 
 ## Authors:
 Jashwanthi V
