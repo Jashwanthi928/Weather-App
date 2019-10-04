@@ -19,8 +19,8 @@ This the weather app which shows weather of different cities-->
                 <div id = climate>Cloudy &#x2601; &#x2601;</div>
                 <span id=temperature>27</span>
                
-                <span id = "cel" onclick="tempClick('C')">&deg;C</span>
-                <span id = "fah" onclick="tempClick('F')">|&deg;F</span>
+                <span id = "cel" onclick="tempClick('C');document.getElementById('cel').style.color = 'blue';document.getElementById('fah').style.color = 'black'">&deg;C</span>
+                <span id = "fah" onclick="tempClick('F');document.getElementById('cel').style.color = 'black';document.getElementById('fah').style.color = 'blue'">|&deg;F</span>
                 
             
                 <div> 

@@ -1,6 +1,5 @@
-//This the weather app which shows Sunny &#x2600;weather of different cities
-
-
+//This the weather app which show weather of different cities
+// let api_id = "fa541811e28f223594a0e3a11717ffa4"
 const cityList=[
   {city:"Ahmedabad, Gujarat",Cel:34,climate:"Sunny &#x2600;"},
   {city:"Bangalore, Karnataka",Cel:27,climate:"Cloudy &#x2601; &#x2601;"},
@@ -38,13 +37,12 @@ function displayCity() {
     
 function tempCall(){
    var x = document.getElementById("input").value;
-   console.log(x);
    var location= cityList.filter(function(v) {if(v.city===x)return v });
    
    var cli=location[0].climate;
-   var cel=location[0].Cel;
+  //  var cel=location[0].Cel;
    
-      return document.getElementById("climate").innerHTML = cli,document.getElementById("temperature").innerHTML = cel;
+      return document.getElementById("climate").innerHTML = cli;
       
 
       
@@ -57,6 +55,7 @@ function tempCall(){
   
      if(v==="C"){
     return document.getElementById("temperature").innerHTML = cel;
+    
 
     }
     else if(v==="F")
@@ -66,3 +65,26 @@ function tempCall(){
     
      
   }
+
+// const searchElement= document.querySelector('[data-city-search]')
+// const searchBox=new google.maps.places.SearchBox(searchElement)
+// searchBox.addListener('places_changed',()=>{
+//   const place =searchBox.getPlaces()[0]
+//   if(place==null)return
+//   const latitude =place.geometry.location.lat()
+//   const longitude =place.geometry.location.lng()
+//   fetch('/weather',{
+//     method:'POST',
+//     headers:{
+//       'Content-Type':'application/json',
+//       'Accept':'application/json'
+//     },
+//     body:JSON.stringify({
+//       latitude:latitude,
+//       longitude:longitude
+//     })
+
+//   }).then(res=>res.json()).then(data=>{
+//     setWeatherData(data, place.formatted_address)
+//   })
+// })
