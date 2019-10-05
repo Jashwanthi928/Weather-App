@@ -40,9 +40,9 @@ function tempCall(){
    var location= cityList.filter(function(v) {if(v.city===x)return v });
    
    var cli=location[0].climate;
-  //  var cel=location[0].Cel;
+   var cel=location[0].Cel;
    
-      return document.getElementById("climate").innerHTML = cli;
+      return document.getElementById("climate").innerHTML = cli,document.getElementById("temperature").innerHTML = cel;
       
 
       
