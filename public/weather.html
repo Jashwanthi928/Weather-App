@@ -1,0 +1,48 @@
+<!-- WEATHER APP
+This the weather app which shows weather of different cities-->
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Weather App</title>
+    </head>
+    <body onload=getTwelveHrs()>
+        <div id="leftSide"> <div id="leftStyle">
+                <img  class="logo" src="logo.png" >
+            <h1 >Weather App</h1>
+
+        </div>
+        </div>
+        <div id="rightSide">
+            <div id ="rightStyle">
+                <div id = city>Bangalore, Karnataka</div>
+                <div id = daytime></div>
+                <div id = climate>Cloudy &#x2601; &#x2601;</div>
+                <span id=temperature>27</span>
+               
+                <span id = "cel" onclick="tempClick('C');document.getElementById('cel').style.color = 'blue';document.getElementById('fah').style.color = 'black'">&deg;C</span>
+                <span id = "fah" onclick="tempClick('F');document.getElementById('cel').style.color = 'black';document.getElementById('fah').style.color = 'blue'">|&deg;F</span>
+                
+            
+                <div> 
+                    <div id="cities">
+                        <h5>Enter another location<br><br>
+                            <input id='input' list="City" placeholder="   Location"onchange="return tempCall(),
+                            displayCity() "> 
+                            <datalist id="City"> 
+                                <option value="Ahmedabad, Gujarat"></option>            
+                                <option value="Bangalore, Karnataka"></option>
+                                <option value="Chennai, Tamil Nadu"></option>
+                                <option value="Hosur, Tamil Nadu"></option>
+                                <option value="Hyderabad, Andhra Pradesh"></option>
+                                <option value="Mumbai, Maharashtra"></option>
+                                <option value="New Delhi, Delhi"></option>
+                            </datalist></h5>
+                    </div>
+        </div> 
+    </div> 
+</div>
+  
+    </body>
+    <script type="text/javascript" src="weatherApp.js"></script>
+    <link  rel="stylesheet" type="text/css" href="weatherApp.css">
+</html>
