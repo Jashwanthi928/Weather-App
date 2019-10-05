@@ -15,3 +15,6 @@ Create a weather application
 1. when you open the app, you can see text box.
 2. Enter the locaton in the textbox.
 3. After entering location,you can see temperature and climate of that particular location.
+
+## Link
+https://weather-app-2eb9f6.netlify.com/
