@@ -13,6 +13,7 @@ const cityList=[
 
 //Code to display day and time
 function getTwelveHrs() {
+  
   var today = new Date();
   var day = today.getDay();
   var hourlist=[12,01,02,03,04,05,06,07,08,09,10,11,12,01,02,03,04,05,06,07,08,09,10,11];
