@@ -50,11 +50,9 @@
 }
 #cel{
     font-size: 1em;
-    /* font-weight: bold; */
 }
 #fah{
-    font-size: 1em;
-    /* font-weight: bold; */
+    font-size: 1em; 
 }
 #temperature{
     font-size:2em;
