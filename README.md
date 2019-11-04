@@ -18,3 +18,6 @@ Create a weather application
 
 ## Link
 https://weather-app-2eb9f6.netlify.com/
+
+![Weather](images/weather.PNG)
+
