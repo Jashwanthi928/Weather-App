@@ -61,9 +61,7 @@ function tempCall(){
     else if(v==="F")
     {
       return document.getElementById("temperature").innerHTML = fahrenheit;
-    }
-    
-     
+    } 
   }
 
 // const searchElement= document.querySelector('[data-city-search]')
