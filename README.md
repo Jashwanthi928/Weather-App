@@ -4,7 +4,6 @@ This is a Weatherapp where you can check weather for different locations.
 ## Authors:
 Jashwanthi V
 
-
 ## Technology used
 HTML, CSS, JavaScript
 
