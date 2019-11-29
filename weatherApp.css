@@ -3,6 +3,7 @@ Author:Jashwanthi
 This the weather app which shows weather of different cities */
 body{
   margin: 0% !important;
+  padding: 0% !important;
 }
 #leftSide {
   position: relative;
