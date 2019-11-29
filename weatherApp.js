@@ -1,5 +1,7 @@
-//This the weather app which show weather of different cities
-// let api_id = "fa541811e28f223594a0e3a11717ffa4"
+// WEATHER APP
+// Author:Jashwanthi
+// This the weather app which shows weather of different cities
+
 const cityList = [
   { city: "Ahmedabad, Gujarat", Cel: 34, climate: "Sunny &#x2600;" },
   {
